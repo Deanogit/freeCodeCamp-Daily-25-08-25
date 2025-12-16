@@ -15,25 +15,25 @@
 // All spaces and separators should be removed.
 
 function toCamelCase(s) {
-  console.log(s);
+  // console.log(s);
   const resultArr = [];
   const regex = /[\s\-\_]+/g;
   let lower = s.toLowerCase();
   let arr = lower.split(regex);
-  console.log(arr);
+  // console.log(arr);
   arr.forEach((x, i) => {
     if (i === 0) {
-      console.log(x);
+      // console.log(x);
       resultArr.push(x);
     } else {
       let firstChar = x[0];
       let upperChar = firstChar.toUpperCase();
-      console.log(upperChar);
+      // console.log(upperChar);
       let result = upperChar + x.slice(1);
-      console.log(result);
+      // console.log(result);
       resultArr.push(result);
     }
-    console.log(resultArr);
+    // console.log(resultArr);
   });
   return resultArr.join('');
   // return s;
